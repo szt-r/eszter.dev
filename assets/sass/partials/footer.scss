@@ -1,0 +1,46 @@
+// Footer
+footer {
+  padding: 0.5rem;
+}
+
+// Social Media Menu
+.social-menu {
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+    }
+  }
+}
+
+.social-menu__link {
+  text-decoration: none;
+  .fab,
+  .far {
+    $size: 1.5rem;
+    width: $size;
+    font-size: $size;
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    transition: all 0.3s linear;
+  }
+}
+
+.social-menu__link:hover {
+  .fab,
+  .far {
+    transition: all 0.3s linear;
+  }
+  @each $element in $social {
+    .fa-#{$element} {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
