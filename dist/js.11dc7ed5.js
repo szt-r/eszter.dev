@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../img/E3828_01.jpg":[["E3828_01.12f59f84.jpg","rzeg"],"rzeg"]}],"NvjX":[function(require,module,exports) {
 "use strict";require("../sass/index.scss"),console.log("JS Ready");
 },{"../sass/index.scss":"4e2U"}]},{},["NvjX"], null)
-//# sourceMappingURL=/js.96a451c0.js.map
+//# sourceMappingURL=/js.11dc7ed5.js.map
