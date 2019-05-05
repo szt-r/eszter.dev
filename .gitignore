@@ -1,0 +1,6 @@
+.DS_Store
+.cache
+.sass-cache
+dist
+node_modules
+npm-debug.log

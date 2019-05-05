@@ -1,13 +1,9 @@
-:root {
-  --white: #fff;
-  --black: #000;
-}
-
 body {
   background: no-repeat fixed center;
   background-image: url('../img/E3828_01.jpg');
   background-size: cover;
   font-size: 10px;
+  font-family: var(--font-family);
 }
 
 .wrapper {
@@ -30,9 +26,10 @@ body {
 }
 
 .logo {
+  $size: 2rem;
   width: auto;
-  height: 2rem;
-  padding: 2rem;
+  height: $size;
+  padding: $size;
 }
 
 h1 {
