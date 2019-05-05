@@ -2,7 +2,7 @@ body {
   background: no-repeat fixed center;
   background-image: url('../img/E3828_01.jpg');
   background-size: cover;
-  font-size: 10px;
+  font-size: var(--font-size);
   font-family: var(--font-family);
 }
 
@@ -32,6 +32,43 @@ body {
   padding: $size;
 }
 
-h1 {
+.social-menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+    }
+  }
+  i {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+a {
   color: var(--white);
+  text-decoration: none;
+  .fab,
+  .far {
+    border: solid 0.1rem var(--white);
+    border-radius: 50%;
+    padding: 0.6rem;
+    transition: 0.3s linear;
+  }
+}
+
+a:hover {
+  .fab,
+  .far {
+    transition: 0.3s linear;
+  }
+  $social: instagram twitter github envelope;
+  @each $element in $social {
+    .fa-#{$element} {
+      color: var(--#{$element});
+      border-color: var(--#{$element});
+    }
+  }
 }
