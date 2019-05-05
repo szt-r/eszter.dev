@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/js/index.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,sBAEAA,QAAQC,IAAI","file":"js.96a451c0.js","sourceRoot":"..","sourcesContent":["import '../sass/index.scss';\n\nconsole.log('JS Ready');"]}
