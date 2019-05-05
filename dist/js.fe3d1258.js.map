@@ -1,1 +1,0 @@
-{"version":3,"sources":["assets/js/index.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,sBAEAA,QAAQC,IAAI","file":"js.fe3d1258.js","sourceRoot":"..","sourcesContent":["import '../sass/index.scss';\n\nconsole.log('JS Ready');"]}
