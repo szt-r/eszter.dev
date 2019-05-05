@@ -1,7 +1,14 @@
+body {
+  background-color: var(--black);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
 .wrapper {
-  --vh: 1vh;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -10,7 +17,7 @@
 .main {
   background-color: var(--black);
   width: 30rem;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -35,42 +42,47 @@
       display: inline;
     }
   }
+  i {
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
 }
 
 a {
   text-decoration: none;
-  color: var(--white);
-  font-size: 1.5rem;
-  padding: 0.5rem;
-  &.fab,
-  &.far {
+  .fab,
+  .far {
+    $size: 1.5rem;
+    font-size: $size;
+    width: $size;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
     border: solid 0.1rem var(--white);
     border-radius: 50%;
-    padding: 0.6rem;
+    padding: 0.5rem;
     transition: all 0.4s linear;
   }
 }
 
 a:hover {
-  &.fab,
-  &.far {
+  .fab,
+  .far {
     transition: all 0.4s linear;
   }
   @each $element in $social {
-    &.fa-#{$element} {
+    .fa-#{$element} {
       color: var(--#{$element});
       background-color: var(--white);
     }
   }
 }
 
-// Media Queries
 @media only screen and (min-width: 480px) {
   body {
     background: no-repeat fixed center;
     background-image: url('../img/E3828_01.jpg');
     background-size: cover;
-    font-size: var(--font-size);
-    font-family: var(--font-family);
   }
 }
