@@ -4,4 +4,33 @@
     background: url('../img/E3828_01.jpg') no-repeat center center fixed;
     background-size: cover;
   }
+
+  // Glitch Effect
+  section:hover > h1 {
+    cursor: pointer;
+    @include textGlitch(
+      'glitch-effect',
+      30,
+      var(--white),
+      var(--black),
+      var(--yellow),
+      var(--accent),
+      500,
+      200
+    );
+  }
+  // on Hover
+  .glitched {
+    cursor: pointer;
+    @include textGlitch(
+      'glitch-effect',
+      20,
+      var(--white),
+      var(--black),
+      var(--yellow),
+      var(--accent),
+      450,
+      115
+    );
+  }
 }

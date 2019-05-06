@@ -9,8 +9,7 @@ h2 {
 }
 
 // Glitch Effect
-section:hover > h1 {
-  cursor: pointer;
+h1 {
   @include textGlitch(
     'glitch-effect',
     30,
@@ -33,18 +32,4 @@ section:hover > h1 {
     width: 100%;
     height: 100%;
   }
-}
-// on Hover
-.glitched {
-  cursor: pointer;
-  @include textGlitch(
-    'glitch-effect',
-    20,
-    var(--white),
-    var(--black),
-    var(--yellow),
-    var(--accent),
-    450,
-    115
-  );
 }
