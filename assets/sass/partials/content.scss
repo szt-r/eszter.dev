@@ -9,18 +9,6 @@ h2 {
 }
 
 // Glitch Effect
-h1 {
-  @include textGlitch(
-    'glitch-effect',
-    30,
-    var(--white),
-    var(--black),
-    var(--yellow),
-    var(--accent),
-    500,
-    200
-  );
-}
 .glitch {
   position: relative;
   &:before,

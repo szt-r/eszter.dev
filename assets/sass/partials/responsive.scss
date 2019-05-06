@@ -1,4 +1,19 @@
 // Media Queries
+@media only screen and (max-width: 480px) {
+  h1 {
+    @include textGlitch(
+      'glitch-effect',
+      30,
+      var(--white),
+      var(--black),
+      var(--yellow),
+      var(--accent),
+      500,
+      200
+    );
+  }
+}
+
 @media only screen and (min-width: 480px) {
   .wrapper {
     background: url('../img/E3828_01.jpg') no-repeat center center fixed;
@@ -19,6 +34,7 @@
       200
     );
   }
+
   // on Hover
   .glitched {
     cursor: pointer;
