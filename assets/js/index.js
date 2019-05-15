@@ -9,32 +9,37 @@ import { log } from 'util';
     let currentHeight = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${currentHeight}px`);
   });
-
-  // Glitch effect
-  const logo = document.querySelector('.logo');
-  const text = document.querySelector('h1');
-  const icons = document.querySelectorAll('i');
-
-  function glitchOnHover(e) {
-    if (e.type == 'mouseover') text.classList.add('glitched');
-    if (e.type == 'mouseleave') text.classList.remove('glitched');
-  }
-
-  ['mouseover', 'mouseleave'].forEach(e => {
-    logo.addEventListener(e, glitchOnHover);
-  })
-  icons.forEach(i => i.addEventListener('mouseover', glitchOnHover));
-  icons.forEach(i => i.addEventListener('mouseleave', glitchOnHover));
 })();
 
-// ASCII Console Art
-console.log(`%c
+// Glitch effect
+const logo = document.querySelector('.logo');
+const text = document.querySelector('h1');
+const icons = document.querySelectorAll('i');
 
-       _/_/_/_/    _/_/_/  _/_/_/_/_/  _/_/_/_/_/  _/_/_/_/  _/_/_/
-      _/        _/              _/        _/      _/        _/    _/
-    _/_/_/      _/_/        _/          _/      _/_/_/    _/_/_/
-  _/              _/    _/            _/      _/        _/    _/
-_/_/_/_/  _/_/_/    _/_/_/_/_/      _/      _/_/_/_/  _/    _/
+function glitchOnHover(e) {
+  if (e.type == 'mouseover') text.classList.add('glitched');
+  if (e.type == 'mouseleave') text.classList.remove('glitched');
+}
 
+['mouseover', 'mouseleave'].forEach(e => {
+  logo.addEventListener(e, glitchOnHover);
+});
+icons.forEach(i => i.addEventListener('mouseover', glitchOnHover));
+icons.forEach(i => i.addEventListener('mouseleave', glitchOnHover));
 
-Drop me a message! hello@eszter.dev`, "font-family:monospace");
+// Console Message
+const styles = [
+  , 'color: black'
+  , 'display: block'
+  , 'background: linear-gradient(90deg, #f368e0 0%, #e8198b 100%)'
+  , 'line-height: 50px'
+  , 'text-align: center'
+  , 'font-size: 20px'
+  , 'font-weight: bold'
+  , 'font-family:monospace'
+].join(';');
+
+console.log('%c Hello! I\'m Eszter ', styles);
+
+console.log('%c Feel free to drop me a message! ⇒ hello@eszter.dev'
+  , 'font-family:monospace;font-size: 12px;');
