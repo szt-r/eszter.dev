@@ -2,9 +2,14 @@
   --vh: 1vh;
   --white: #fff;
   --black: #000;
-  --yellow: #f8ff00;
-  --accent: #0f8;
-  --gradient: linear-gradient(90deg, #f8ff00 0%, #0f8 100%);
+  --accent: #e8198b;
+  --accent-secondary: #f368e0;
+  // --gradient: linear-gradient(90deg, #f8ff00 0%, #0f8 100%);
+  --gradient: linear-gradient(
+    90deg,
+    var(--accent-secondary) 0%,
+    var(--accent) 100%
+  );
   --font-family: 'Roboto', sans-serif;
   --font-size: 10px;
   --main-width: 30rem;

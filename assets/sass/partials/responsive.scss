@@ -6,7 +6,7 @@
       30,
       var(--white),
       var(--black),
-      var(--yellow),
+      var(--accent-secondary),
       var(--accent),
       500,
       200
@@ -15,6 +15,13 @@
 }
 
 @media only screen and (min-width: 480px) {
+  .logo {
+    $size: 1.2rem;
+    width: auto;
+    height: $size;
+    padding: $size;
+  }
+
   .wrapper {
     background: url('../img/E3828_01.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -28,7 +35,7 @@
       30,
       var(--white),
       var(--black),
-      var(--yellow),
+      var(--accent-secondary),
       var(--accent),
       500,
       200
@@ -43,7 +50,7 @@
       20,
       var(--white),
       var(--black),
-      var(--yellow),
+      var(--accent-secondary),
       var(--accent),
       450,
       115
